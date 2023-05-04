@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+            document.write()
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .out{
+            display: flex;
+            justify-content: center;
+            
+        }
+      .div{
+        padding-left:16%;
+        background: black;
+        width: 35rem;
+        border-radius: 50px;
+        box-shadow:  0 0 40px;
+      }
+        .input{
+            box-shadow: none;
+            -webkit-text-fill-color: body;
+            outline: none;
+            color: wheat;
+            border: none;
+            /* background: rgb(255, 254, 254); */
+            padding: 10px;
+            background: none;
+            width: 50vh;
+            border-radius: 5px;
+            transition: 1s;
+            
+        }
+        .input:focus{
+         
+            background-color: rgb(66, 66, 66);
+            border-radius: 20px;
+        }
+        @keyframes veeer {
+            0%{
+                width: 50vh;
+            }
+            100%{
+               
+                width: 30vh;
+            }
+        }
+        .inp{
+            font-size: small;
+            padding: 30px;
+            border-radius: 20px;
+            outline: none;
+            transition: 1s;
+            /* background-color: aquamarine; */
+            box-shadow: rgb(122, 120, 120) 5px  0 5px;
+        }
+        @keyframes veer {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .inp:hover{
+            animation: veer 1s linear ; 
+            box-shadow: rgb(0, 194, 248) 5px  0 5px;
+            
+        }
+        .slash{
+            padding-left: 37px;
+        }
+        input:hover{
+            background-color: rgb(0, 194, 248);
+        }
+        .red{
+            background-color: rgb(255, 135, 135);
+        }
+        .cl{
+            padding: 10px;
+            transition: 5s;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="out">
+        <div class="div">
+            <form name = "forms">
+                <!-- <label for="" style="color: white;"> Enrer Text </label> -->
+             <input  class="input" id="demo"  type="text" name = "one">
+             <br><br>
+            <input type="button" value="C" class="inp" onclick="forms.one.value = ' ' ">           
+            <input type="button" value = "="  class="red inp" onclick="forms.one.value = eval(forms.one.value ) ">
+            <br> <br>
+            <input type="button" value = "4" class="inp" onclick="forms.one.value += '4' ">
+            <input type="button" value = "5" class="inp" onclick="forms.one.value += '5' ">
+            <input type="button" value = "6" class="inp" onclick="forms.one.value += '6' ">
+            <input type="button" value = "+" class="inp" onclick="forms.one.value += '+' "> 
+            <br> <br>
+            <input type="button" value = "7"class="inp" onclick="forms.one.value += '7' ">
+            <input type="button" value = "8" class="inp"onclick="forms.one.value += '8' ">
+            <input type="button" value = "9"class="inp" onclick="forms.one.value += '9' ">
+            <input type="button" value = "-" class="inp"onclick="forms.one.value += '-' ">
+                <br> <br>
+                <input   type="button" value = "1"class="inp" onclick="forms.one.value += '1' ">
+                <input type="button" value = "2"class="inp" onclick="forms.one.value += '2' ">
+                <input type="button" value = "3"class="inp" onclick="forms.one.value += '3' "> 
+                <input type="button" value = "*" class="inp"onclick="forms.one.value += '*' ">
+                <br><br>
+                <input type="button" value = "0"class="inp" onclick="forms.one.value += '0' ">
+                <input type="button" value = "00"class="inp" onclick="forms.one.value += '00' ">
+                <input   type="button" value = "."class="inp" onclick="forms.one.value += '.' ">
+                <input type="button" class="slash inp "  value = "/" onclick="forms.one.value += '/' ">
+                <br> <br>
+            </form>
+        </div>
+    </body>
+    </div>
+</html>
