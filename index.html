@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: constatntia;
+        background: rgb(255, 255, 255);
+      }
+      .one {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .two {
+        background: black;
+        min-height: 60vh;
+        width: 50vw;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 0 70px;
+        display: flex;
+        justify-content: center;
+
+      }
+      .cen{
+        background-color: rgb(0, 0, 0);
+      
+      }
+      #txt {
+        margin-top: 15vh;
+        border-radius: 15px;
+        background-color: rgb(139, 201, 255);
+        outline: none;
+        padding: 20px;
+     
+      }
+      li {
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 2px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+      ul {
+        /* display: flex; */
+        justify-content: center;
+        border-radius: 10px;
+        list-style: none;
+        padding: 10px;
+        width: 100%;
+      }
+      .txt:focus {
+        box-shadow: rgba(56, 152, 255, 0.787) 0 0 70px;
+      }
+      .btn {
+        cursor: pointer;
+        border-radius: 15px;
+        background-color: aquamarine;
+        padding: 20px;
+        margin: 5px;
+      }
+      .butun{
+          background: black;
+          outline: none;
+          border: none;
+          color: wheat;
+          font-size: 30px;
+        float:right; 
+        position: relative;
+        cursor: pointer;
+        bottom: 7px;    
+          
+      }
+      a{
+        background: black;
+          outline: none;
+          border: none;
+          color: wheat;
+          font-size: 30px;
+        float:right; 
+        position: relative;
+        cursor: pointer;
+        bottom: 7px;    
+        
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="one">
+      <div class="two">
+     <div class="cen">
+      <input type="text" id="txt" /><button class="btn" id="bt">Add</button>
+          <ul id="ul">
+           
+          </ul>
+     </div>
+      </div>
+    </div>
+<script src="script.js"></script>
+  </body>
+</html>
