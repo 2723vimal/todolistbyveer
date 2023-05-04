@@ -105,6 +105,29 @@
      </div>
       </div>
     </div>
-<script src="script.js"></script>
+    <script>
+                      var list = [];
+             var x = document.getElementById("txt");
+             var ul = document.getElementById("ul");
+             document.getElementById("bt").addEventListener("click", function () {
+                list.push(x.value)
+                x.value = ""
+                show();
+             })
+             var  show =() => {
+                ul.innerHTML = ""
+                list.forEach(function (n , i) {
+                        ul.innerHTML += `<li>${n} <a onclick="del(${i})">&times;</a></li>`
+                })
+             }
+             var del = (i) => { 
+                console.log(list);
+                let newdata=  list.filter((item,index) => index !== i)
+                list = newdata;
+                show();
+             }
+            
+  
+    </script>
   </body>
 </html>
